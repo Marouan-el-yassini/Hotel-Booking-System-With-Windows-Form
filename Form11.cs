@@ -54,7 +54,7 @@ namespace HBS
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 DataPropertyName = "Number",
-                HeaderText = "Numéro"
+                HeaderText = "NumÃ©ro"
             });
 
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn()
@@ -99,7 +99,7 @@ namespace HBS
                 return;
             }
 
-            Room r = new Room((int)numericUpDown1.Value, type, Convert.ToDouble(textBoxPrice.Text), Image.FromFile(@"C:\Rom1.PNG"));
+            Room r = new Room((int)numericUpDown1.Value, type, Convert.ToDouble(textBoxPrice.Text), Image.FromFile();
             Reservation res = new Reservation(c, r, dateTimePickerIn.Value, dateTimePickerOut.Value);
             Form2 form2 = new Form2(c,r,res);
             form2.Show();
